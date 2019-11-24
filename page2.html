@@ -20,30 +20,59 @@
 		<div class="piano-tile" id="do">
 			<script>
 				document.getElementById("do").addEventListener("click", function(){
-    				document.getElementById("audio").play();});
+    				document.getElementById("audio1").play();});
 			</script>
-			<audio id="audio" src="Images/DO.mp3"></audio>
-			
+			<audio id="audio1" src="Images/DO.mp3"></audio>
 			<img id="do" src="Images/7.png" alt="DO" onmousedown="this.src='Images/11.png';" onclick="this.src='Images/7.png';" >
 			
 		</div>
 		<div class="piano-tile" id="re">
-			<img src="Images/9.png" alt="RE" onmousedown="this.src='Images/12.png';" onclick="this.src='Images/9.png';" onclick="playAudio('Images/RE.mp3')">
+			<script>
+				document.getElementById("re").addEventListener("click", function(){
+    				document.getElementById("audio2").play();});
+			</script>
+			<audio id="audio2" src="Images/RE.mp3"></audio>
+			<img id="re" src="Images/9.png" alt="RE" onmousedown="this.src='Images/12.png';" onclick="this.src='Images/9.png';" >
 		</div>
 		<div class="piano-tile" id="mi">
-			<img src="Images/9.png" alt="MI" onmousedown="this.src='Images/1.png';" onclick="this.src='Images/9.png';" onclick="playAudio('Images/MI.mp3')">
+			<script>
+				document.getElementById("mi").addEventListener("click", function(){
+    				document.getElementById("audio3").play();});
+			</script>
+			<audio id="audio3" src="Images/MI.mp3"></audio>
+			<img id="mi" src="Images/9.png" alt="MI" onmousedown="this.src='Images/1.png';" onclick="this.src='Images/9.png';" >
 		</div>
 		<div class="piano-tile" id="fa">
-			<img src="Images/9.png" alt="FA" onmousedown="this.src='Images/13.png';" onclick="this.src='Images/9.png';" onclick="playAudio('Images/FA.mp3')">
+			<script>
+				document.getElementById("fa").addEventListener("click", function(){
+    				document.getElementById("audio4").play();});
+			</script>
+			<audio id="audio4" src="Images/FA.mp3"></audio>
+			<img id="fa" src="Images/9.png" alt="FA" onmousedown="this.src='Images/13.png';" onclick="this.src='Images/9.png';" 
 		</div>
 		<div class="piano-tile" id="sol">
-			<img src="Images/9.png" alt="SOL" onmousedown="this.src='Images/13.png';" onclick="this.src='Images/9.png';" onclick="playAudio('Images/SOL.mp3')">
+			<script>
+				document.getElementById("sol").addEventListener("click", function(){
+    				document.getElementById("audio5").play();});
+			</script>
+			<audio id="audio5" src="Images/SOL.mp3"></audio>
+			<img id="sol" src="Images/9.png" alt="SOL" onmousedown="this.src='Images/13.png';" onclick="this.src='Images/9.png';" >
 		</div>
 		<div class="piano-tile" id="la">
-			<img src="Images/9.png" alt="LA" onmousedown="this.src='Images/2.png';" onclick="this.src='Images/9.png';" onclick="playAudio('Images/LA.mp3')">
+			<script>
+				document.getElementById("la").addEventListener("click", function(){
+    				document.getElementById("audio6").play();});
+			</script>
+			<audio id="audio6" src="Images/LA.mp3"></audio>
+			<img id="la" src="Images/9.png" alt="LA" onmousedown="this.src='Images/2.png';" onclick="this.src='Images/9.png';" >
 		</div>
 		<div class="piano-tile" id="si">
-			<img src="Images/8.png" alt="SI" onmousedown="this.src='Images/5.png';" onclick="this.src='Images/8.png';" onclick="playAudio('Images/SI.mp3')">
+			<script>
+				document.getElementById("si").addEventListener("click", function(){
+    				document.getElementById("audio7").play();});
+			</script>
+			<audio id="audio7" src="Images/SI.mp3"></audio>
+			<img id="si" src="Images/8.png" alt="SI" onmousedown="this.src='Images/5.png';" onclick="this.src='Images/8.png';" >
 		</div>
 	</div>
 </body>
