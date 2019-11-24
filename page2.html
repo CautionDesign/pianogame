@@ -23,9 +23,17 @@
 		<img src="Images/chiens.png" alt="DOGS">
 	</div>
 	<div id="piano-tiles">
+<audio id="myAudio">
+  <source src="DO.mp3" type="audio/mp3">
+</audio>
 		<div class="piano-tile" id="do">
-			<img src="Images/7.png" alt="DO" onmousedown="this.src='Images/11.png';" onclick="this.src='Images/7.png';" value="PLAY"  onclick="play()">
-			<audio id="audio" src="Images/DO.mp3" ></audio>
+			<img src="Images/7.png" alt="DO" onmousedown="this.src='Images/11.png';" onclick="this.src='Images/7.png';" onclick="playAudio()">
+<script>
+var x = document.getElementById("myAudio"); 
+function playAudio() { x.play(); } 
+function pauseAudio() { x.pause(); } 
+</script>
+			
 		</div>
 		<div class="piano-tile" id="re">
 			<img src="Images/9.png" alt="RE" onmousedown="this.src='Images/12.png';" onclick="this.src='Images/9.png';" onclick="playAudio('Images/RE.mp3')">
