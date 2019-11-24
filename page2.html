@@ -6,12 +6,12 @@
 	<link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-	<script type="text/javascript">
-  function playAudio(url) {
-  var a = new Audio(url);
-  a.play();
-}
-</script>
+	<script>
+  function play(){
+       var audio = document.getElementById("audio");
+       audio.play();
+                 }
+   </script>
 	
 	<div id="header">
 		<a href="index.html">
@@ -24,7 +24,8 @@
 	</div>
 	<div id="piano-tiles">
 		<div class="piano-tile" id="do">
-			<img src="Images/7.png" alt="DO" onmousedown="this.src='Images/11.png';" onclick="this.src='Images/7.png';" onclick="playAudio('Images/DO.mp3')">
+			<img src="Images/7.png" alt="DO" onmousedown="this.src='Images/11.png';" onclick="this.src='Images/7.png';" value="PLAY"  onclick="play()">
+			<audio id="audio" src="Images/DO.mp3" ></audio>
 		</div>
 		<div class="piano-tile" id="re">
 			<img src="Images/9.png" alt="RE" onmousedown="this.src='Images/12.png';" onclick="this.src='Images/9.png';" onclick="playAudio('Images/RE.mp3')">
