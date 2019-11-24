@@ -5,14 +5,7 @@
 	<title>Piano dogs</title>
 	<link rel="stylesheet" type="text/css" href="style.css" />
 </head>
-<body>
-	<script>
-  function play(){
-       var audio = document.getElementById("audio");
-       audio.play();
-                 }
-   </script>
-	
+<body>	
 	<div id="header">
 		<a href="index.html">
 			<img id="menu" src="Images/patte.png" alt="Menu">
@@ -23,10 +16,12 @@
 		<img src="Images/chiens.png" alt="DOGS">
 	</div>
 	<div id="piano-tiles">
-<audio id="myAudio">
-  <source src="DO.mp3" type="audio/mp3">
-</audio>
+
+		
 		<div class="piano-tile" id="do">
+			<audio id="myAudio">
+  				<source src="DO.mp3" type="audio/mp3">
+			</audio>
 			<img src="Images/7.png" alt="DO" onmousedown="this.src='Images/11.png';" onclick="this.src='Images/7.png';" onclick="document.getElementById('myAudio').play();">
 			
 		</div>
